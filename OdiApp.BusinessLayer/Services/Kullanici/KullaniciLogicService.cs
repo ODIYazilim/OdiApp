@@ -11,7 +11,7 @@ namespace OdiApp.BusinessLayer.Services.Kullanici
 {
     public interface IKullaniciLogicService
     {
-        Task<OdiResponse<KullaniciBilgileriDTO>> SignUp(SignupDTO signupDTO);
+        Task<OdiResponse<UserTokenDTO>> SignUp(SignupDTO signupDTO);
         Task<OdiResponse<KullaniciBilgileriDTO>> GetUserById(KullaniciIdDTO kullaniciId);
     }
 
