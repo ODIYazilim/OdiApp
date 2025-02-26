@@ -1,6 +1,6 @@
-﻿using OdiApp.Entity.Base;
+﻿using OdiApp.EntityLayer.Base;
 
-namespace OdiApp.Entity.Token
+namespace OdiApp.EntityLayer.Token
 {
     public class UserRefreshToken : StringBaseModel
     {

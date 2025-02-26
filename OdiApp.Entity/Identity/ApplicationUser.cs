@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Identity;
 
-namespace OdiApp.Entity.Identity
+namespace OdiApp.EntityLayer.Identity
 {
     public class ApplicationUser : IdentityUser
     {

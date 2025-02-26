@@ -4,9 +4,10 @@ using OdiApp.BusinessLayer.Core.Services;
 using OdiApp.DataAccessLayer.Token;
 using OdiApp.DTOs.GlobalDTOs;
 using OdiApp.DTOs.IdentityDTOs;
+using OdiApp.DTOs.SharedDTOs;
 using OdiApp.DTOs.TokenDTOs;
-using OdiApp.Entity.Identity;
-using OdiApp.Entity.Token;
+using OdiApp.EntityLayer.Identity;
+using OdiApp.EntityLayer.Token;
 
 namespace OdiApp.BusinessLayer.Services.Token
 {

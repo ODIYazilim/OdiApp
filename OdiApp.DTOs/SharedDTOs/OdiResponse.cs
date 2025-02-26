@@ -1,7 +1,10 @@
-﻿namespace OdiApp.DTOs.GlobalDTOs
+﻿using System.Collections.Generic;
+
+namespace OdiApp.DTOs.SharedDTOs
 {
-    public class OdiResponse<T> where T : class
+    public class OdiResponse<T>
     {
+
         public int StatusCode { get; set; } //private set kaldırıldı
         public bool IsSuccessful { get; set; } //private set kaldırıldı
 
@@ -17,7 +20,7 @@
 
         public static OdiResponse<T> Success(string message, int statusCode)
         {
-            return new OdiResponse<T> { Data = default(T), StatusCode = statusCode, IsSuccessful = true, Message = message };
+            return new OdiResponse<T> { Data = default, StatusCode = statusCode, IsSuccessful = true, Message = message };
         }
 
         public static OdiResponse<T> Fail(string message, List<string> errors, int statusCode)

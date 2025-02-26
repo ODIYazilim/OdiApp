@@ -1,5 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using OdiApp.Entity.Token;
+using OdiApp.EntityLayer.Token;
 
 namespace OdiApp.DataAccessLayer.Token
 {

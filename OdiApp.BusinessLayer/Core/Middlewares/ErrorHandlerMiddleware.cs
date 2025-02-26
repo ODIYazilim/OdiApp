@@ -1,7 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Http.HttpResults;
 using OdiApp.BusinessLayer.Core.Exceptions;
-using OdiApp.DTOs.GlobalDTOs;
+using OdiApp.DTOs.SharedDTOs;
 using System.Net;
 using System.Text.Json;
 
@@ -58,7 +57,7 @@ namespace OdiApp.BusinessLayer.Core.Middlewares
                 context.Response.StatusCode = response.StatusCode;
 
 
-                await context.Response.WriteAsync(JsonSerializer.Serialize(OdiResponse<NoContent>.Fail("Bir Sorun Oluştu", error?.Message, response.StatusCode)));
+                await context.Response.WriteAsync(JsonSerializer.Serialize(OdiResponse<DTOs.SharedDTOs.NoContent>.Fail("Bir Sorun Oluştu", error?.Message, response.StatusCode)));
 
             }
         }

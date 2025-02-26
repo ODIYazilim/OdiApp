@@ -3,7 +3,7 @@ using Microsoft.IdentityModel.Tokens;
 using OdiApp.BusinessLayer.Core.Services;
 using OdiApp.DataAccessLayer.Token;
 using OdiApp.DTOs.TokenDTOs;
-using OdiApp.Entity.Identity;
+using OdiApp.EntityLayer.Identity;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 

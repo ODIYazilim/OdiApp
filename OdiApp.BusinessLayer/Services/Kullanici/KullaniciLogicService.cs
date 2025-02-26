@@ -1,11 +1,11 @@
 ﻿
 using Microsoft.AspNetCore.Identity;
 using OdiApp.BusinessLayer.Services.Token;
-using OdiApp.DTOs.GlobalDTOs;
 using OdiApp.DTOs.IdentityDTOs;
 using OdiApp.DTOs.Kullanici;
+using OdiApp.DTOs.SharedDTOs;
 using OdiApp.DTOs.TokenDTOs;
-using OdiApp.Entity.Identity;
+using OdiApp.EntityLayer.Identity;
 
 namespace OdiApp.BusinessLayer.Services.Kullanici
 {

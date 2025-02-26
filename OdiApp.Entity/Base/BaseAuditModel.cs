@@ -1,4 +1,4 @@
-﻿namespace OdiApp.Entity.Base
+﻿namespace OdiApp.EntityLayer.Base
 {
     public class BaseAuditModel
     {

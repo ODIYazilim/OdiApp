@@ -9,7 +9,7 @@ using OdiApp.BusinessLayer.Core.Filters;
 using OdiApp.BusinessLayer.Core.Middlewares;
 using OdiApp.BusinessLayer.Core.Services;
 using OdiApp.DataAccessLayer;
-using OdiApp.Entity.Identity;
+using OdiApp.EntityLayer.Identity;
 using OdiApp.WebAPI;
 using Serilog;
 using Serilog.Events;
