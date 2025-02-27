@@ -1,7 +1,6 @@
 ﻿using Amazon;
 using Amazon.S3;
 using Amazon.S3.Model;
-using OdiApp.BusinessLayer.Core;
 using OdiApp.BusinessLayer.Core.Services.Interface;
 using OdiApp.DTOs.SharedDTOs;
 namespace OdiApp.BusinessLayer.Core.Services
@@ -125,8 +124,8 @@ namespace OdiApp.BusinessLayer.Core.Services
         {
             RegionEndpoint bucketRegion = RegionEndpoint.EUCentral1;
             IAmazonS3 s3Client = new AmazonS3Client(
-              "AKIA4QYDI6I2O5S2LRTX",
-              "Itd6r61ufVkKnsco5L8HDHn3U+NPTnMeGP0513IK",
+              "",
+              "",
               bucketRegion
 
               );
