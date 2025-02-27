@@ -1,5 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Odi.Shared.Services.Interface;
+using OdiApp.BusinessLayer.Core.Services.Interface;
 using OdiApp.BusinessLayer.Services.PerformerLogicServices.AdminPerformerProfilAlanlariLogicServices;
 using OdiApp.DTOs.PerformerDTOs.PerformerProfilAlanlariDTOs;
 using OdiApp.EntityLayer.PerformerModels.PerformerProfilModels;

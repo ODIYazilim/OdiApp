@@ -1,9 +1,9 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Odi.Shared.Services.Interface;
+using OdiApp.BusinessLayer.Core.Services.Interface;
 using OdiApp.BusinessLayer.Services.PerformerLogicServices.PerformerAbonelikLogicServices;
+using OdiApp.DTOs.Kullanici;
 using OdiApp.DTOs.PerformerDTOs.PerformerAbonelikDTOs;
 using OdiApp.DTOs.SharedDTOs.AbonelikUrunuDTOs;
-using OdiApp.DTOs.SharedDTOs.OrtakDTOs;
 
 namespace OdiApp.WebAPI.Controllers;
 

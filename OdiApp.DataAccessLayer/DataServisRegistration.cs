@@ -1,4 +1,15 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
+using OdiApp.DataAccessLayer.BildirimDataServices.MesajlasmaDataServices;
+using OdiApp.DataAccessLayer.BildirimDataServices.MutluCellSmsDataServices;
+using OdiApp.DataAccessLayer.BildirimDataServices.OdiBildirimDataServices;
+using OdiApp.DataAccessLayer.BildirimDataServices.OneSignalDataServices;
+using OdiApp.DataAccessLayer.BildirimDataServices.ProjeMesajlasmaDataServices;
+using OdiApp.DataAccessLayer.IslemlerDataServices.CallbackIslemler;
+using OdiApp.DataAccessLayer.IslemlerDataServices.OdiIslemler;
+using OdiApp.DataAccessLayer.IslemlerDataServices.OdiListeler;
+using OdiApp.DataAccessLayer.IslemlerDataServices.OpsiyonIslemler;
+using OdiApp.DataAccessLayer.IslemlerDataServices.PerformerListeler;
+using OdiApp.DataAccessLayer.IslemlerDataServices.RolSendeDataServices;
 using OdiApp.DataAccessLayer.Kullanici;
 using OdiApp.DataAccessLayer.PerformerDataServices.CVFormAlanlariDataServices;
 using OdiApp.DataAccessLayer.PerformerDataServices.DeneyimDataServices;
@@ -123,6 +134,30 @@ namespace OdiApp.DataAccessLayer
             services.AddScoped<IPerformerEtiketleriDataService, PerformerEtiketleriDataService>();
 
             services.AddScoped<IPerformerYorumDataService, PerformerYorumDataService>();
+
+            #endregion
+
+            #region Bildirim
+
+            services.AddScoped<IOdiBildirimDataService, OdiBildirimDataService>();
+            services.AddScoped<IOneSignalUserDataService, OneSignalUserDataService>();
+            services.AddScoped<IMesajlasmaDataService, MesajlasmaDataService>();
+            services.AddScoped<IProjeMesajlasmaDataService, ProjeMesajlasmaDataService>();
+            services.AddScoped<IKullaniciBasicDataService, KullaniciBasicDataService>();
+            services.AddScoped<IMutluCellSmsDataService, MutluCellSmsDataService>();
+
+            #endregion
+
+            #region Islemler
+
+            services.AddScoped<IOdiIslemDataService, OdiIslemDataService>();
+            services.AddScoped<IPerformerListeDataService, PerformerListeDataService>();
+            services.AddScoped<IPerformerOdiDataService, PerformerOdiDataService>();
+            services.AddScoped<ICallbackDataService, CallbackDataService>();
+            services.AddScoped<IOpsiyonDataService, OpsiyonDataService>();
+            services.AddScoped<IOdiListeDataService, OdiListeDataService>();
+            services.AddScoped<IKullaniciBasicDataService, KullaniciBasicDataService>();
+            services.AddScoped<IRolSendeDataService, RolSendeDataService>();
 
             #endregion
         }

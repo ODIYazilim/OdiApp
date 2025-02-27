@@ -13,6 +13,14 @@
 		<PackageReference Include="Serilog.Sinks.MSSqlServer" Version="8.1.0" />
 		<PackageReference Include="Swashbuckle.AspNetCore.SwaggerGen" Version="7.2.0" />
 		<PackageReference Include="AWSSDK.S3" Version="3.7.202.3" />
+		<PackageReference Include="OneSignalApi" Version="2.0.2" />
+		<PackageReference Include="RestSharp" Version="110.2.0" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Content Include="HTMLMails\**\*.*">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
 	</ItemGroup>
 
 	<ItemGroup>

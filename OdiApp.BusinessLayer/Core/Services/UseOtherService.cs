@@ -1,9 +1,9 @@
-﻿using Odi.Shared.Services.Interface;
+﻿using OdiApp.BusinessLayer.Core.Services.Interface;
 using System.Net.Http.Headers;
 using System.Text;
 using System.Text.Json;
 
-namespace Odi.Shared.Services
+namespace OdiApp.BusinessLayer.Core.Services
 {
     public class UseOtherService : IUseOtherService
     {

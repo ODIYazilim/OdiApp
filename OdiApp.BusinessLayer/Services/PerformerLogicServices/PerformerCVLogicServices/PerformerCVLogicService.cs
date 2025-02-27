@@ -1,7 +1,7 @@
 ﻿using AutoMapper;
 using Microsoft.Extensions.Configuration;
-using Odi.Shared.Services;
-using Odi.Shared.Services.Interface;
+using OdiApp.BusinessLayer.Core.Services;
+using OdiApp.BusinessLayer.Core.Services.Interface;
 using OdiApp.DataAccessLayer.PerformerDataServices.CVFormAlanlariDataServices;
 using OdiApp.DataAccessLayer.PerformerDataServices.DeneyimDataServices;
 using OdiApp.DataAccessLayer.PerformerDataServices.Egitim;
@@ -17,6 +17,7 @@ using OdiApp.DataAccessLayer.PerformerDataServices.SektorDataServices;
 using OdiApp.DataAccessLayer.PerformerDataServices.YetenekData;
 using OdiApp.DataAccessLayer.PerformerDataServices.YetenekTemsilcisiDataServices;
 using OdiApp.DTOs.Enums;
+using OdiApp.DTOs.Kullanici;
 using OdiApp.DTOs.PerformerDTOs;
 using OdiApp.DTOs.PerformerDTOs.PerformerCVDTOs;
 using OdiApp.DTOs.PerformerDTOs.PerformerCVDTOs.MenajerPerformerGuncellenenAlanlarDTOs;

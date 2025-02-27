@@ -1,5 +1,5 @@
-﻿using OdiApp.DTOs.SharedDTOs;
-using OdiApp.DTOs.SharedDTOs.OrtakDTOs;
+﻿using OdiApp.DTOs.Kullanici;
+using OdiApp.DTOs.SharedDTOs;
 using OdiApp.DTOs.SharedDTOs.PerformerDTOs.CVDTOs;
 
 namespace OdiApp.DTOs.PerformerDTOs.PerformerCVDTOs;

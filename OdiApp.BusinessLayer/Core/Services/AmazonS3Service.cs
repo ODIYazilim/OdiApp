@@ -1,9 +1,10 @@
 ﻿using Amazon;
 using Amazon.S3;
 using Amazon.S3.Model;
-using Odi.Shared.Services.Interface;
+using OdiApp.BusinessLayer.Core;
+using OdiApp.BusinessLayer.Core.Services.Interface;
 using OdiApp.DTOs.SharedDTOs;
-namespace Odi.Shared.Services
+namespace OdiApp.BusinessLayer.Core.Services
 {
     public class AmazonS3Service : IAmazonS3Service
     {

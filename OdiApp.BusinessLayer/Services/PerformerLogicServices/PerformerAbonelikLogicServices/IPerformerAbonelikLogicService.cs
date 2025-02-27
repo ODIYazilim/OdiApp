@@ -1,7 +1,7 @@
-﻿using OdiApp.DTOs.PerformerDTOs.PerformerAbonelikDTOs;
+﻿using OdiApp.DTOs.Kullanici;
+using OdiApp.DTOs.PerformerDTOs.PerformerAbonelikDTOs;
 using OdiApp.DTOs.SharedDTOs;
 using OdiApp.DTOs.SharedDTOs.AbonelikUrunuDTOs;
-using OdiApp.DTOs.SharedDTOs.OrtakDTOs;
 using OdiApp.EntityLayer.PerformerModels.PerformerAbonelikModels;
 
 namespace OdiApp.BusinessLayer.Services.PerformerLogicServices.PerformerAbonelikLogicServices;

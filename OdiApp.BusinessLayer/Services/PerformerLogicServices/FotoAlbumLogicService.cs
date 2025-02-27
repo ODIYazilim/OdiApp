@@ -1,10 +1,10 @@
 ﻿using AutoMapper;
-using Odi.Shared.Services.Interface;
+using OdiApp.BusinessLayer.Core.Services.Interface;
 using OdiApp.DataAccessLayer.PerformerDataServices.FotografAlbum;
 using OdiApp.DataAccessLayer.PerformerDataServices.KullaniciBasicDataServices;
+using OdiApp.DTOs.Kullanici;
 using OdiApp.DTOs.PerformerDTOs.FotoAlbumDTOs;
 using OdiApp.DTOs.SharedDTOs;
-using OdiApp.DTOs.SharedDTOs.OrtakDTOs;
 using OdiApp.EntityLayer.PerformerModels.FotografAlbum;
 using OdiApp.EntityLayer.SharedModels;
 
@@ -180,8 +180,6 @@ public class FotoAlbumLogicService : IFotoAlbumLogicService
         }
         return OdiResponse<List<FotoAlbumFotografDTO>>.Success("Fotoğraf Listesi getirildi", _mapper.Map<List<FotoAlbumFotografDTO>>(list), 200);
     }
-
-
 
     #endregion
 }

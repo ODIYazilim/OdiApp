@@ -1,5 +1,5 @@
 ﻿using AutoMapper;
-using Odi.Shared.Services.Interface;
+using OdiApp.BusinessLayer.Core.Services.Interface;
 
 namespace OdiApp.BusinessLayer.Services.PerformerLogicServices;
 

@@ -6,7 +6,7 @@ using System.Net;
 using System.Net.Mail;
 using System.Reflection;
 
-namespace Odi.Shared
+namespace OdiApp.BusinessLayer.Core
 {
     public class Fonksiyonlar
     {

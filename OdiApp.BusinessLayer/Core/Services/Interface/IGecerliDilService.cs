@@ -1,6 +1,6 @@
 ﻿using System.Threading.Tasks;
 
-namespace Odi.Shared.Services.Interface
+namespace OdiApp.BusinessLayer.Core.Services.Interface
 {
     public interface IGecerliDilService
     {

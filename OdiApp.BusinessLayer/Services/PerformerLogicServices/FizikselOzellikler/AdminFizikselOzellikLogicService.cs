@@ -1,5 +1,5 @@
 ﻿using AutoMapper;
-using Odi.Shared;
+using OdiApp.BusinessLayer.Core;
 using OdiApp.BusinessLayer.Services.PerformerLogicServices.FizikselOzellikler.Interfaces;
 using OdiApp.DataAccessLayer.PerformerDataServices.FizikselOzellikler;
 using OdiApp.DTOs.PerformerDTOs;

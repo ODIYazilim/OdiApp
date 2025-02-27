@@ -1,5 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Odi.Shared.Services.Interface;
+using OdiApp.BusinessLayer.Core.Services.Interface;
 using OdiApp.BusinessLayer.Services.PerformerLogicServices.AdminVideoTagLogicServices;
 
 namespace OdiApp.WebAPI.Controllers;

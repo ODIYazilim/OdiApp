@@ -1,5 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Odi.Shared.Services.Interface;
+using OdiApp.BusinessLayer.Core.Services.Interface;
 using OdiApp.BusinessLayer.Services.PerformerLogicServices.PerformerEtiketleriLogicServices;
 using OdiApp.DTOs.PerformerDTOs;
 using OdiApp.DTOs.PerformerDTOs.PerformerEtiketleriDTOs;

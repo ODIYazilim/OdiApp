@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Odi.Shared.Services.Interface
+namespace OdiApp.BusinessLayer.Core.Services.Interface
 {
     public interface IUseOtherService2<T>
     {

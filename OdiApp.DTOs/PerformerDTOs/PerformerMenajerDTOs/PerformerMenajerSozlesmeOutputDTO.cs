@@ -1,4 +1,4 @@
-﻿using OdiApp.DTOs.SharedDTOs.OrtakDTOs;
+﻿using OdiApp.DTOs.Kullanici;
 
 namespace OdiApp.DTOs.PerformerDTOs.PerformerMenajerDTOs;
 

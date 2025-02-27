@@ -1,5 +1,5 @@
-﻿using OdiApp.DTOs.PerformerDTOs.FotoAlbumDTOs;
-using OdiApp.DTOs.SharedDTOs.OrtakDTOs;
+﻿using OdiApp.DTOs.Kullanici;
+using OdiApp.DTOs.PerformerDTOs.FotoAlbumDTOs;
 
 namespace OdiApp.DTOs.PerformerDTOs;
 

@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc.Filters;
 using OdiApp.BusinessLayer.Core.Exceptions;
 
-namespace Odi.Shared.AuthAttribute
+namespace OdiApp.BusinessLayer.Core.AuthAttribute
 {
     [AttributeUsage(AttributeTargets.Class | AttributeTargets.Method)]
     public class AllAuthorizeAttribute : Attribute, IAuthorizationFilter

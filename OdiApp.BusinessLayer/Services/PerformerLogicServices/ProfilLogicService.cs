@@ -1,7 +1,8 @@
 ﻿using AutoMapper;
 using Microsoft.Extensions.Configuration;
-using Odi.Shared.Services.Interface;
+using OdiApp.BusinessLayer.Core.Services.Interface;
 using OdiApp.BusinessLayer.Services.PerformerLogicServices.PerformerCVLogicServices;
+using OdiApp.DTOs.Kullanici;
 using OdiApp.DTOs.PerformerDTOs;
 using OdiApp.DTOs.PerformerDTOs.FotoAlbumDTOs;
 using OdiApp.DTOs.SharedDTOs;

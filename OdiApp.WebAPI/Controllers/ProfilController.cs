@@ -1,8 +1,9 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Odi.Shared.AuthAttribute;
-using Odi.Shared.Services.Interface;
+using OdiApp.BusinessLayer.Core.AuthAttribute;
+using OdiApp.BusinessLayer.Core.Services.Interface;
 using OdiApp.BusinessLayer.Services.PerformerLogicServices;
 using OdiApp.BusinessLayer.Services.PerformerLogicServices.SetCard;
+using OdiApp.DTOs.Kullanici;
 using OdiApp.DTOs.SharedDTOs.OrtakDTOs;
 
 namespace OdiApp.WebAPI.Controllers;

@@ -1,11 +1,11 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Odi.Shared.Services.Interface;
+using OdiApp.BusinessLayer.Core.Services.Interface;
 using OdiApp.BusinessLayer.Services.PerformerLogicServices.OnerilerLogicServices;
 using OdiApp.BusinessLayer.Services.PerformerLogicServices.YetenekTemsilcisiLogicServices;
+using OdiApp.DTOs.Kullanici;
 using OdiApp.DTOs.PerformerDTOs;
 using OdiApp.DTOs.PerformerDTOs.OnerilerDTOs;
 using OdiApp.DTOs.PerformerDTOs.YetenekTemsilcisiDTOs;
-using OdiApp.DTOs.SharedDTOs.OrtakDTOs;
 using OdiApp.DTOs.SharedDTOs.PerformerDTOs.YetenekTemsilcisiDTOs;
 
 namespace OdiApp.WebAPI.Controllers;

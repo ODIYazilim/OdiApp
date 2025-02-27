@@ -1,7 +1,7 @@
 ﻿using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
-using Odi.Shared.AuthAttribute;
-using Odi.Shared.Services.Interface;
+using OdiApp.BusinessLayer.Core.AuthAttribute;
+using OdiApp.BusinessLayer.Core.Services.Interface;
 using OdiApp.BusinessLayer.Services.PerformerLogicServices.PerformerCVLogicServices;
 
 namespace OdiApp.WebAPI.Controllers;

@@ -1,5 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Odi.Shared.Services.Interface;
+using OdiApp.BusinessLayer.Core.Services.Interface;
 using OdiApp.BusinessLayer.Services.PerformerLogicServices.KullaniciBasicLogicServices;
 using OdiApp.BusinessLayer.Services.PerformerLogicServices.PerformerCVLogicServices;
 using OdiApp.DTOs.SharedDTOs;

@@ -1,8 +1,8 @@
 ﻿using Microsoft.AspNetCore.Http;
-using Odi.Shared.Services.Interface;
 using OdiApp.BusinessLayer.Core.Exceptions;
+using OdiApp.BusinessLayer.Core.Services.Interface;
 
-namespace Odi.Shared.Services
+namespace OdiApp.BusinessLayer.Core.Services
 {
     public class GecerliDilService : IGecerliDilService
     {

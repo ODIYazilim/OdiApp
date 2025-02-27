@@ -1,8 +1,9 @@
 ﻿using AutoMapper;
 using Microsoft.Extensions.Configuration;
-using Odi.Shared.Services;
-using Odi.Shared.Services.Interface;
+using OdiApp.BusinessLayer.Core.Services;
+using OdiApp.BusinessLayer.Core.Services.Interface;
 using OdiApp.DataAccessLayer.PerformerDataServices.YetenekTemsilcisiDataServices;
+using OdiApp.DTOs.Kullanici;
 using OdiApp.DTOs.PerformerDTOs;
 using OdiApp.DTOs.PerformerDTOs.YetenekTemsilcisiDTOs;
 using OdiApp.DTOs.SharedDTOs;

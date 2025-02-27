@@ -4,7 +4,17 @@ using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using OdiApp.EntityLayer.Base;
+using OdiApp.EntityLayer.BildirimModels;
+using OdiApp.EntityLayer.BildirimModels.Mesajlasma;
+using OdiApp.EntityLayer.BildirimModels.ProjeMesajlasma;
+using OdiApp.EntityLayer.BildirimModels.SmsAyarlariModels;
 using OdiApp.EntityLayer.Identity;
+using OdiApp.EntityLayer.IslemlerModels.CallbackIslemler;
+using OdiApp.EntityLayer.IslemlerModels.OdiIslemler;
+using OdiApp.EntityLayer.IslemlerModels.OdiListeler;
+using OdiApp.EntityLayer.IslemlerModels.OpsiyonIslemler;
+using OdiApp.EntityLayer.IslemlerModels.PerformerListeler;
+using OdiApp.EntityLayer.IslemlerModels.RolSendeModels;
 using OdiApp.EntityLayer.PerformerModels.Deneyimler;
 using OdiApp.EntityLayer.PerformerModels.Egitim;
 using OdiApp.EntityLayer.PerformerModels.FizikselOzellikler;
@@ -219,6 +229,46 @@ namespace OdiApp.DataAccessLayer
         public DbSet<KullaniciBasic> KullaniciBasic { get; set; }
 
         #endregion
+
+        #endregion
+
+        #region Bildirim        
+
+        public DbSet<OneSignalUser> OneSignalUsers { get; set; }
+        public DbSet<OneSignalUserSubscription> OneSignalUserSubscriptions { get; set; }
+        public DbSet<OdiBildirim> OdiBildirim { get; set; }
+        public DbSet<OdiBildirimHerkes> OdiBildirimHerkes { get; set; }
+        public DbSet<Mesaj> Mesaj { get; set; }
+        public DbSet<MesajDetay> MesajDetay { get; set; }
+        public DbSet<ProjeMesaj> ProjeMesaj { get; set; }
+        public DbSet<ProjeMesajDetay> ProjeMesajDetay { get; set; }
+        public DbSet<MutluCellSmsAyarlari> MutluCellSmsAyarlari { get; set; }
+
+        #endregion
+
+        #region Islemler
+
+        public DbSet<OdiTalep> OdiTalepleri { get; set; }
+        public DbSet<PerformerOdi> PerformerOdi { get; set; }
+        public DbSet<PerformerOdiSoru> PerformerOdiSorulari { get; set; }
+        public DbSet<PerformerOdiFotograf> PerformerOdiFotograflar { get; set; }
+        public DbSet<PerformerOdiSes> PerformerOdiSesler { get; set; }
+        public DbSet<PerformerOdiVideo> PerformerOdiVideolar { get; set; }
+        public DbSet<OdiListe> OdiListeleri { get; set; }
+        public DbSet<OdiListeDetay> OdiListeDetay { get; set; }
+        public DbSet<PerformerListe> PerformerListe { get; set; }
+        public DbSet<PerformerListeDetay> PerformerListeDetay { get; set; }
+        public DbSet<PerformerOdiTekrarCekOneri> PerformerOdiTekrarCekOnerileri { get; set; }
+        public DbSet<OpsiyonListesi> OpsiyonListeleri { get; set; }
+        public DbSet<Opsiyon> Opsiyon { get; set; }
+        public DbSet<OpsiyonAnketSorulari> OpsiyonAnketSorulari { get; set; }
+
+        public DbSet<CallbackAyarlari> CallbackAyarlari { get; set; }
+        public DbSet<CallbackNot> CallbackNotlari { get; set; }
+        public DbSet<CallbackSenaryo> CallbackSenaryolari { get; set; }
+        public DbSet<CallbackSaat> CallbackSaatleri { get; set; }
+        public DbSet<Callback> Callback { get; set; }
+        public DbSet<RolSende> RolSende { get; set; }
 
         #endregion
 

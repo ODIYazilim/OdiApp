@@ -1,7 +1,7 @@
 ﻿using AutoMapper;
 using Microsoft.Extensions.Configuration;
-using Odi.Shared.Services;
-using Odi.Shared.Services.Interface;
+using OdiApp.BusinessLayer.Core.Services;
+using OdiApp.BusinessLayer.Core.Services.Interface;
 using OdiApp.BusinessLayer.Services.PerformerLogicServices.PerformerAbonelikLogicServices;
 using OdiApp.DataAccessLayer.PerformerDataServices.KullaniciBasicDataServices;
 using OdiApp.DataAccessLayer.PerformerDataServices.PerformerAbonelikUrunuDataServices;
@@ -9,12 +9,12 @@ using OdiApp.DataAccessLayer.PerformerDataServices.PerformerMenajerSozlesmeDataS
 using OdiApp.DataAccessLayer.PerformerDataServices.YetenekTemsilcisiDataServices;
 using OdiApp.DTOs.Enums;
 using OdiApp.DTOs.Enums.AbonelikEnums;
+using OdiApp.DTOs.Kullanici;
 using OdiApp.DTOs.PerformerDTOs.MenajerAbonelikDTOs;
 using OdiApp.DTOs.PerformerDTOs.PerformerMenajerDTOs;
 using OdiApp.DTOs.SharedDTOs;
 using OdiApp.DTOs.SharedDTOs.AbonelikUrunuDTOs;
 using OdiApp.DTOs.SharedDTOs.GlobalDTOs.YetenekTemsilcisiAbonelikDTOs;
-using OdiApp.DTOs.SharedDTOs.OrtakDTOs;
 using OdiApp.DTOs.SharedDTOs.PerformerDTOs.YetenekTemsilcisiDTOs;
 using OdiApp.EntityLayer.PerformerModels.PerformerAbonelikUrunModels;
 using OdiApp.EntityLayer.PerformerModels.PerformerMenajerModels;

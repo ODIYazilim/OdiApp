@@ -1,13 +1,13 @@
 ﻿using AutoMapper;
 using Microsoft.Extensions.Configuration;
-using Odi.Shared.Services;
+using OdiApp.BusinessLayer.Core.Services;
 using OdiApp.DataAccessLayer.PerformerDataServices.PerformerAbonelikDataServices;
 using OdiApp.DataAccessLayer.PerformerDataServices.PerformerAbonelikUrunuDataServices;
 using OdiApp.DTOs.Enums;
+using OdiApp.DTOs.Kullanici;
 using OdiApp.DTOs.PerformerDTOs.PerformerAbonelikDTOs;
 using OdiApp.DTOs.SharedDTOs;
 using OdiApp.DTOs.SharedDTOs.AbonelikUrunuDTOs;
-using OdiApp.DTOs.SharedDTOs.OrtakDTOs;
 using OdiApp.EntityLayer.PerformerModels.PerformerAbonelikModels;
 using OdiApp.EntityLayer.PerformerModels.PerformerAbonelikUrunModels;
 

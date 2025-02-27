@@ -1,12 +1,12 @@
 ﻿using AutoMapper;
 using OdiApp.EntityLayer.Base;
-using Odi.Shared.Services.Interface;
 using OdiApp.DataAccessLayer.PerformerDataServices.KullaniciBasicDataServices;
 using OdiApp.DataAccessLayer.PerformerDataServices.PerformerYorumDataServices;
 using OdiApp.DTOs.PerformerDTOs.PerformerYorumDTOs;
 using OdiApp.EntityLayer.PerformerModels.PerformerYorumModels;
 using OdiApp.DTOs.SharedDTOs;
 using OdiApp.EntityLayer.SharedModels;
+using OdiApp.BusinessLayer.Core.Services.Interface;
 
 namespace OdiApp.BusinessLayer.Services.PerformerLogicServices.PerformerYorumLogicServices;
 

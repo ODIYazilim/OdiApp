@@ -1,8 +1,8 @@
 ﻿using Microsoft.AspNetCore.Http;
-using Odi.Shared.Services.Interface;
+using OdiApp.BusinessLayer.Core.Services.Interface;
 using OdiApp.DTOs.SharedDTOs;
 
-namespace Odi.Shared.Services
+namespace OdiApp.BusinessLayer.Core.Services
 {
     public class SharedIdentityService : ISharedIdentityService
     {

@@ -1,7 +1,7 @@
 ﻿using Amazon.S3;
 using OdiApp.DTOs.SharedDTOs;
 
-namespace Odi.Shared.Services.Interface
+namespace OdiApp.BusinessLayer.Core.Services.Interface
 {
     public interface IAmazonS3Service
     {

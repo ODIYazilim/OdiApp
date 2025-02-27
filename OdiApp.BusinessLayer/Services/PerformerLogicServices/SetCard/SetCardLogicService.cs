@@ -1,9 +1,9 @@
 ﻿using AutoMapper;
-using Odi.Shared.Services.Interface;
+using OdiApp.BusinessLayer.Core.Services.Interface;
 using OdiApp.DataAccessLayer.PerformerDataServices.SetCard;
+using OdiApp.DTOs.Kullanici;
 using OdiApp.DTOs.PerformerDTOs.SetCard;
 using OdiApp.DTOs.SharedDTOs;
-using OdiApp.DTOs.SharedDTOs.OrtakDTOs;
 
 namespace OdiApp.BusinessLayer.Services.PerformerLogicServices.SetCard;
 

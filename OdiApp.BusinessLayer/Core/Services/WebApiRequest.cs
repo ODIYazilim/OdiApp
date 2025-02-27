@@ -3,7 +3,7 @@ using System.Net.Http.Headers;
 using System.Text;
 using System.Text.Json;
 
-namespace Odi.Shared.Services
+namespace OdiApp.BusinessLayer.Core.Services
 {
     public class WebApiRequest
     {
@@ -60,7 +60,7 @@ namespace Odi.Shared.Services
 
         public async Task<OdiResponse<TResult>> Get<TResult>(string endpoint, string authorizationToken)
         {
-            return await ApiRequest<TResult, Object>(HttpMethod.Get, endpoint, authorizationToken, null, null, null);
+            return await ApiRequest<TResult, object>(HttpMethod.Get, endpoint, authorizationToken, null, null, null);
         }
 
         public async Task<OdiResponse<TResult>> Post<TResult, TRequest>(string endpoint, string authorizationToken, TRequest requestModel)
@@ -103,7 +103,7 @@ namespace Odi.Shared.Services
                         }
                         else
                         {
-                            StringContent httpContent = new StringContent(JsonSerializer.Serialize(requestModel), UnicodeEncoding.UTF8, "application/json");
+                            StringContent httpContent = new StringContent(JsonSerializer.Serialize(requestModel), Encoding.UTF8, "application/json");
                             httpRequest.Content = httpContent;
                         }
                     }
@@ -140,7 +140,7 @@ namespace Odi.Shared.Services
                 }
 
                 // Header Authorization
-                if (!String.IsNullOrEmpty(authorizationToken))
+                if (!string.IsNullOrEmpty(authorizationToken))
                 {
                     httpRequest.Headers.Add("Authorization", "Bearer " + authorizationToken);
                 }
@@ -188,7 +188,7 @@ namespace Odi.Shared.Services
                         }
                         else
                         {
-                            StringContent httpContent = new StringContent(JsonSerializer.Serialize(requestModel), UnicodeEncoding.UTF8, "application/json");
+                            StringContent httpContent = new StringContent(JsonSerializer.Serialize(requestModel), Encoding.UTF8, "application/json");
                             httpRequest.Content = httpContent;
                         }
                     }
@@ -225,7 +225,7 @@ namespace Odi.Shared.Services
                 }
 
                 // Header Authorization
-                if (!String.IsNullOrEmpty(authorizationToken))
+                if (!string.IsNullOrEmpty(authorizationToken))
                 {
                     httpRequest.Headers.Add("Authorization", "Bearer " + authorizationToken);
                 }

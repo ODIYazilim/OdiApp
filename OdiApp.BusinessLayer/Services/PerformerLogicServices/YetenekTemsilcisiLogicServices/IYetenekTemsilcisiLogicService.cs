@@ -1,9 +1,9 @@
-﻿using OdiApp.EntityLayer.Base;
+﻿using OdiApp.DTOs.Kullanici;
 using OdiApp.DTOs.PerformerDTOs;
 using OdiApp.DTOs.PerformerDTOs.YetenekTemsilcisiDTOs;
-using OdiApp.DTOs.SharedDTOs.PerformerDTOs.YetenekTemsilcisiDTOs;
-using OdiApp.DTOs.SharedDTOs.OrtakDTOs;
 using OdiApp.DTOs.SharedDTOs;
+using OdiApp.DTOs.SharedDTOs.OrtakDTOs;
+using OdiApp.DTOs.SharedDTOs.PerformerDTOs.YetenekTemsilcisiDTOs;
 
 namespace OdiApp.BusinessLayer.Services.PerformerLogicServices.YetenekTemsilcisiLogicServices;
 

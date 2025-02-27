@@ -1,4 +1,4 @@
-﻿using OdiApp.EntityLayer.Base;
+﻿using OdiApp.DTOs.Kullanici;
 using OdiApp.DTOs.PerformerDTOs;
 using OdiApp.DTOs.PerformerDTOs.PerformerCVDTOs;
 using OdiApp.DTOs.PerformerDTOs.PerformerCVDTOs.MenajerPerformerGuncellenenAlanlarDTOs;
@@ -8,15 +8,15 @@ using OdiApp.DTOs.PerformerDTOs.PerformerCVDTOs.PerformerCVs.CVYetenek;
 using OdiApp.DTOs.PerformerDTOs.PerformerCVDTOs.PerformerCVs.ProfilVideo;
 using OdiApp.DTOs.PerformerDTOs.PerformerProfilAlanlariDTOs;
 using OdiApp.DTOs.PerformerDTOs.SektorDTOs;
-using OdiApp.EntityLayer.PerformerModels.PerformerCVModels;
+using OdiApp.DTOs.SharedDTOs;
+using OdiApp.DTOs.SharedDTOs.OrtakDTOs;
 using OdiApp.DTOs.SharedDTOs.PerformerDTOs;
-using OdiApp.DTOs.SharedDTOs.PerformerDTOs.YetenekTipiDTOs;
+using OdiApp.DTOs.SharedDTOs.PerformerDTOs.CVDTOs;
 using OdiApp.DTOs.SharedDTOs.PerformerDTOs.DeneyimDTOs;
 using OdiApp.DTOs.SharedDTOs.PerformerDTOs.EgitimDTOs;
-using OdiApp.DTOs.SharedDTOs.OrtakDTOs;
 using OdiApp.DTOs.SharedDTOs.PerformerDTOs.GuncellenenAlanDTOs;
-using OdiApp.DTOs.SharedDTOs.PerformerDTOs.CVDTOs;
-using OdiApp.DTOs.SharedDTOs;
+using OdiApp.DTOs.SharedDTOs.PerformerDTOs.YetenekTipiDTOs;
+using OdiApp.EntityLayer.PerformerModels.PerformerCVModels;
 
 namespace OdiApp.BusinessLayer.Services.PerformerLogicServices.PerformerCVLogicServices;
 

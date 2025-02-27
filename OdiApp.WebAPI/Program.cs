@@ -31,14 +31,20 @@ Log.Logger = new LoggerConfiguration()
 builder.Host.UseSerilog();
 //builder.Services.AddOpenApi();
 builder.Services.AddHttpContextAccessor();
-builder.Services.AddBusinessLayerServices();
+builder.Services.AddHttpClient();
+builder.Services.AddSignalR();
 builder.Services.AddCoreServices(builder.Configuration);
-builder.Services.AddDataLayerServices();
 builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddAutoMapper(Assembly.GetExecutingAssembly());
+
+builder.Services.AddBusinessLayerServices();
+builder.Services.AddDataLayerServices();
+
 builder.Services.AddControllers(options =>
 {
     options.Filters.Add<CustomExceptionFilterAttribute>();
 });
+
 SwaggerControllerOrder<ControllerBase> swaggerControllerOrder = new SwaggerControllerOrder<ControllerBase>(Assembly.GetEntryAssembly());
 builder.Services.AddSwaggerGen(options =>
 {
@@ -132,6 +138,11 @@ builder.Services.AddAuthentication(opt =>
         ValidateIssuer = true,
         ValidateLifetime = true,
     };
+});
+
+builder.Services.Configure<ApiBehaviorOptions>(options =>
+{
+    options.DisableImplicitFromServicesParameters = true;
 });
 
 var app = builder.Build();

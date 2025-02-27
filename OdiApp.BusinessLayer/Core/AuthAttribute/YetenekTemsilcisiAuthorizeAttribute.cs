@@ -2,7 +2,7 @@
 using OdiApp.BusinessLayer.Core.Exceptions;
 using OdiApp.DTOs.Enums;
 
-namespace Odi.Shared.AuthAttribute
+namespace OdiApp.BusinessLayer.Core.AuthAttribute
 {
     [AttributeUsage(AttributeTargets.Class | AttributeTargets.Method)]
     public class YetenekTemsilcisiAuthorizeAttribute : Attribute, IAuthorizationFilter
