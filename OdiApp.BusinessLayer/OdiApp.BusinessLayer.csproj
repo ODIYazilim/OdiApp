@@ -15,6 +15,7 @@
 		<PackageReference Include="AWSSDK.S3" Version="3.7.202.3" />
 		<PackageReference Include="OneSignalApi" Version="2.0.2" />
 		<PackageReference Include="RestSharp" Version="110.2.0" />
+		<PackageReference Include="Iyzipay" Version="2.1.61" />
 	</ItemGroup>
 
 	<ItemGroup>

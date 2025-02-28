@@ -15,6 +15,8 @@ using OdiApp.EntityLayer.IslemlerModels.OdiListeler;
 using OdiApp.EntityLayer.IslemlerModels.OpsiyonIslemler;
 using OdiApp.EntityLayer.IslemlerModels.PerformerListeler;
 using OdiApp.EntityLayer.IslemlerModels.RolSendeModels;
+using OdiApp.EntityLayer.OdemeModels.AbonelikUrunuModels;
+using OdiApp.EntityLayer.OdemeModels.OdicikModels;
 using OdiApp.EntityLayer.PerformerModels.Deneyimler;
 using OdiApp.EntityLayer.PerformerModels.Egitim;
 using OdiApp.EntityLayer.PerformerModels.FizikselOzellikler;
@@ -41,6 +43,7 @@ using OdiApp.EntityLayer.PerformerModels.YetenekTemsilcisiModels;
 using OdiApp.EntityLayer.SharedModels;
 using OdiApp.EntityLayer.Token;
 using System.Security.Claims;
+using AbonelikUrunu = OdiApp.EntityLayer.OdemeModels.AbonelikUrunuModels.AbonelikUrunu;
 
 namespace OdiApp.DataAccessLayer
 {
@@ -269,6 +272,18 @@ namespace OdiApp.DataAccessLayer
         public DbSet<CallbackSaat> CallbackSaatleri { get; set; }
         public DbSet<Callback> Callback { get; set; }
         public DbSet<RolSende> RolSende { get; set; }
+
+        #endregion
+
+        #region Odeme
+
+        public DbSet<OdicikIslemleri> OdicikIslemleri { get; set; }
+        public DbSet<AbonelikUrunu> AbonelikUrunleri { get; set; }
+        public DbSet<AbonelikUrunuOdemePlani> AbonelikUrunuOdemePlanlari { get; set; }
+        public DbSet<AbonelikPaketiSatinAlma> AbonelikPaketiSatinAlmalari { get; set; }
+        public DbSet<AbonelikPaketiAboneOlma> AbonelikPaketiAboneOlmalari { get; set; }
+        public DbSet<AbonelikKartlari> AbonelikKartlari { get; set; }
+        public DbSet<AbonelikYukseltmeTalep> AbonelikYukseltmeTalepleri { get; set; }
 
         #endregion
 

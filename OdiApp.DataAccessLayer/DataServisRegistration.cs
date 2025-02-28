@@ -11,6 +11,13 @@ using OdiApp.DataAccessLayer.IslemlerDataServices.OpsiyonIslemler;
 using OdiApp.DataAccessLayer.IslemlerDataServices.PerformerListeler;
 using OdiApp.DataAccessLayer.IslemlerDataServices.RolSendeDataServices;
 using OdiApp.DataAccessLayer.Kullanici;
+using OdiApp.DataAccessLayer.OdemeDataServices.AbonelikKartlariDataServices;
+using OdiApp.DataAccessLayer.OdemeDataServices.AbonelikPaketiAboneOlmaDataServices;
+using OdiApp.DataAccessLayer.OdemeDataServices.AbonelikPaketiSatinAlmaDataServices;
+using OdiApp.DataAccessLayer.OdemeDataServices.AbonelikUrunuDataServices;
+using OdiApp.DataAccessLayer.OdemeDataServices.AbonelikUrunuOdemePlaniDataServices;
+using OdiApp.DataAccessLayer.OdemeDataServices.AbonelikYukseltmeTalepDataServices;
+using OdiApp.DataAccessLayer.OdemeDataServices.OdicikIslemleriDataServices;
 using OdiApp.DataAccessLayer.PerformerDataServices.CVFormAlanlariDataServices;
 using OdiApp.DataAccessLayer.PerformerDataServices.DeneyimDataServices;
 using OdiApp.DataAccessLayer.PerformerDataServices.Egitim;
@@ -158,6 +165,19 @@ namespace OdiApp.DataAccessLayer
             services.AddScoped<IOdiListeDataService, OdiListeDataService>();
             services.AddScoped<IKullaniciBasicDataService, KullaniciBasicDataService>();
             services.AddScoped<IRolSendeDataService, RolSendeDataService>();
+
+            #endregion
+
+            #region Odeme
+
+            services.AddScoped<IOdicikIslemleriDataService, OdicikIslemleriDataService>();
+            services.AddScoped<IAbonelikUrunuDataService, AbonelikUrunuDataService>();
+            services.AddScoped<IAbonelikUrunuOdemePlaniDataService, AbonelikUrunuOdemePlaniDataService>();
+            services.AddScoped<IAbonelikPaketiSatinAlmaDataService, AbonelikPaketiSatinAlmaDataService>();
+            services.AddScoped<IAbonelikKartlariDataService, AbonelikKartlariDataService>();
+            services.AddScoped<IAbonelikPaketiAboneOlmaDataService, AbonelikPaketiAboneOlmaDataService>();
+            services.AddScoped<IAbonelikYukseltmeTalepDataService, AbonelikYukseltmeTalepDataService>();
+            services.AddScoped<IKullaniciBasicDataService, KullaniciBasicDataService>();
 
             #endregion
         }

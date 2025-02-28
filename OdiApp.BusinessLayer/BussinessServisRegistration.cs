@@ -19,6 +19,9 @@ using OdiApp.BusinessLayer.Services.IslemlerLogicServices.PerformerListeler;
 using OdiApp.BusinessLayer.Services.IslemlerLogicServices.ProjePerformer;
 using OdiApp.BusinessLayer.Services.IslemlerLogicServices.RolSendeLogicServices;
 using OdiApp.BusinessLayer.Services.Kullanici;
+using OdiApp.BusinessLayer.Services.OdemeLogicServices.AbonelikUrunuLogicServices;
+using OdiApp.BusinessLayer.Services.OdemeLogicServices.IyzicoLogicServices;
+using OdiApp.BusinessLayer.Services.OdemeLogicServices.OdicikIslemleriLogicServices;
 using OdiApp.BusinessLayer.Services.PerformerLogicServices;
 using OdiApp.BusinessLayer.Services.PerformerLogicServices.AdminPerformerProfilAlanlariLogicServices;
 using OdiApp.BusinessLayer.Services.PerformerLogicServices.AdminSeslendirmeDiliLogicServices;
@@ -120,6 +123,15 @@ namespace OdiApp.BusinessLayer
             services.AddScoped<IOpsiyonLogicService, OpsiyonLogicService>();
             services.AddScoped<IKullaniciBasicLogicService, KullaniciBasicLogicService>();
             services.AddScoped<IRolSendeLogicService, RolSendeLogicService>();
+
+            #endregion
+
+            #region Odeme
+
+            services.AddScoped<IOdicikIslemleriLogicService, OdicikIslemleriLogicService>();
+            services.AddScoped<IIyzicoLogicService, IyzicoLogicService>();
+            services.AddScoped<IAbonelikUrunuLogicService, AbonelikUrunuLogicService>();
+            services.AddScoped<IKullaniciBasicLogicService, KullaniciBasicLogicService>();
 
             #endregion
         }
