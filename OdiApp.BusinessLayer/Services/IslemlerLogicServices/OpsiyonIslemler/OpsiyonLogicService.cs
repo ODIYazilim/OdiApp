@@ -8,6 +8,7 @@ using OdiApp.DTOs.Enums;
 using OdiApp.DTOs.IslemlerDTOs;
 using OdiApp.DTOs.IslemlerDTOs.OpsiyonIslemler;
 using OdiApp.DTOs.SharedDTOs;
+using OdiApp.DTOs.SharedDTOs.ProjeDTOs.ProjeBilgileriDTOs;
 using OdiApp.EntityLayer.IslemlerModels.OpsiyonIslemler;
 
 namespace OdiApp.BusinessLayer.Services.IslemlerLogicServices.OpsiyonIslemler

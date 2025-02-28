@@ -1,9 +1,9 @@
-﻿using OdiApp.DTOs.IslemlerDTOs;
-using OdiApp.DTOs.IslemlerDTOs.OdiIslemler.OdiIzlemeListesiDTO;
+﻿using OdiApp.DTOs.IslemlerDTOs.OdiIslemler.OdiIzlemeListesiDTO;
 using OdiApp.DTOs.IslemlerDTOs.OdiIslemler.OdiTalepDTOs;
 using OdiApp.DTOs.Kullanici;
 using OdiApp.DTOs.SharedDTOs;
 using OdiApp.DTOs.SharedDTOs.OrtakDTOs;
+using OdiApp.DTOs.SharedDTOs.ProjeDTOs.ProjeBilgileriDTOs;
 
 namespace OdiApp.BusinessLayer.Services.IslemlerLogicServices.OdiIslemler
 {
@@ -25,7 +25,5 @@ namespace OdiApp.BusinessLayer.Services.IslemlerLogicServices.OdiIslemler
         Task<OdiResponse<List<IzlemeListesiItem>>> MenajerIzlemeListesi(MenajerIdDTO menajerId);
         Task<OdiResponse<List<IzlemeListesiItem>>> PerformerOdiIzlemeListesi(PerformerIdDTO model);
         Task<OdiResponse<List<IzlemeListesiItem>>> YapımIzlemeListesi(ProjeIdDTO projeId, string jwtToken);
-
-
     }
 }

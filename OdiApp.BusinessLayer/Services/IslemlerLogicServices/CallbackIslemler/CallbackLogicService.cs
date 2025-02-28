@@ -2,10 +2,10 @@
 using OdiApp.BusinessLayer.Core;
 using OdiApp.BusinessLayer.Core.Services.Interface;
 using OdiApp.DataAccessLayer.IslemlerDataServices.CallbackIslemler;
-using OdiApp.DTOs.IslemlerDTOs;
 using OdiApp.DTOs.IslemlerDTOs.CallbackIslemler;
 using OdiApp.DTOs.Kullanici;
 using OdiApp.DTOs.SharedDTOs;
+using OdiApp.DTOs.SharedDTOs.ProjeDTOs.ProjeBilgileriDTOs;
 using OdiApp.EntityLayer.IslemlerModels.CallbackIslemler;
 
 namespace OdiApp.BusinessLayer.Services.IslemlerLogicServices.CallbackIslemler
@@ -22,7 +22,6 @@ namespace OdiApp.BusinessLayer.Services.IslemlerLogicServices.CallbackIslemler
             _mapper = mapper;
             _amazonS3Service = amazonS3Service;
             _callbackDataService = callbackDataService;
-
         }
 
         public async Task<OdiResponse<List<CallbackTakvimSaatleriOutputDTO>>> YeniCallbackAyarlarıTakvimOlustur(CallbackAyarlarıTakvimCreateDTO input, OdiUser user)
@@ -37,7 +36,6 @@ namespace OdiApp.BusinessLayer.Services.IslemlerLogicServices.CallbackIslemler
             List<CallbackSenaryo> senaryolar = new List<CallbackSenaryo>();
             if (input.CallbackSenaryolari != null) senaryolar = _mapper.Map<List<CallbackSenaryo>>(input.CallbackSenaryolari);
             List<CallbackSaat> takvim = _mapper.Map<List<CallbackSaat>>(input.CallbackTakvimi);
-
 
             #region ekleyen guncelleyen
             ayarlar.Ekleyen = user.AdSoyad;

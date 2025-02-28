@@ -1,6 +1,6 @@
-﻿using OdiApp.DTOs.IslemlerDTOs;
-using OdiApp.DTOs.IslemlerDTOs.OpsiyonIslemler;
+﻿using OdiApp.DTOs.IslemlerDTOs.OpsiyonIslemler;
 using OdiApp.DTOs.SharedDTOs;
+using OdiApp.DTOs.SharedDTOs.ProjeDTOs.ProjeBilgileriDTOs;
 
 namespace OdiApp.BusinessLayer.Services.IslemlerLogicServices.OpsiyonIslemler
 {
@@ -21,7 +21,5 @@ namespace OdiApp.BusinessLayer.Services.IslemlerLogicServices.OpsiyonIslemler
         Task<OdiResponse<OpsiyonOutputDTO>> GeriCevir(OpsiyonGeriCevirDTO dto);
         Task<OdiResponse<bool>> MenajerOnayi(OpsiyonIdDTO opsId);
         Task<OdiResponse<OpsiyonOutputDTO>> Yanitla(OpsiyonYanitlaDTO dto, OdiUser user, string jwtToken);
-
-
     }
 }

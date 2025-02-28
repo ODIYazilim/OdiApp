@@ -1,7 +1,7 @@
-﻿using OdiApp.DTOs.IslemlerDTOs;
-using OdiApp.DTOs.IslemlerDTOs.CallbackIslemler;
+﻿using OdiApp.DTOs.IslemlerDTOs.CallbackIslemler;
 using OdiApp.DTOs.Kullanici;
 using OdiApp.DTOs.SharedDTOs;
+using OdiApp.DTOs.SharedDTOs.ProjeDTOs.ProjeBilgileriDTOs;
 
 namespace OdiApp.BusinessLayer.Services.IslemlerLogicServices.CallbackIslemler
 {

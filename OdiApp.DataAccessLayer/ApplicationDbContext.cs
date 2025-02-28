@@ -40,8 +40,22 @@ using OdiApp.EntityLayer.PerformerModels.SesRengiModels;
 using OdiApp.EntityLayer.PerformerModels.VideoTipiModels;
 using OdiApp.EntityLayer.PerformerModels.YetenekModels;
 using OdiApp.EntityLayer.PerformerModels.YetenekTemsilcisiModels;
+using OdiApp.EntityLayer.ProjelerModels.KayitliModels.KayitliOdiFotograf;
+using OdiApp.EntityLayer.ProjelerModels.KayitliModels.KayitliOdiSes;
+using OdiApp.EntityLayer.ProjelerModels.KayitliModels.KayitliOdiSoru;
+using OdiApp.EntityLayer.ProjelerModels.KayitliModels.KayitliOdiVideo;
+using OdiApp.EntityLayer.ProjelerModels.KayitliModels.KayitliRolBilgisi;
+using OdiApp.EntityLayer.ProjelerModels.KayitliModels.KayitliRolOdi;
+using OdiApp.EntityLayer.ProjelerModels.OdiFotograf;
+using OdiApp.EntityLayer.ProjelerModels.OdiSes;
+using OdiApp.EntityLayer.ProjelerModels.OdiSoru;
+using OdiApp.EntityLayer.ProjelerModels.OdiVideo;
+using OdiApp.EntityLayer.ProjelerModels.ProjeBilgileri;
+using OdiApp.EntityLayer.ProjelerModels.ProjeRolBilgisi;
+using OdiApp.EntityLayer.ProjelerModels.ProjeRolOdi;
 using OdiApp.EntityLayer.SharedModels;
 using OdiApp.EntityLayer.Token;
+using OdiApp.EntityLayer.UygulamaBilgileriModels;
 using System.Security.Claims;
 using AbonelikUrunu = OdiApp.EntityLayer.OdemeModels.AbonelikUrunuModels.AbonelikUrunu;
 
@@ -284,6 +298,93 @@ namespace OdiApp.DataAccessLayer
         public DbSet<AbonelikPaketiAboneOlma> AbonelikPaketiAboneOlmalari { get; set; }
         public DbSet<AbonelikKartlari> AbonelikKartlari { get; set; }
         public DbSet<AbonelikYukseltmeTalep> AbonelikYukseltmeTalepleri { get; set; }
+
+        #endregion
+
+        #region Projeler
+
+        public DbSet<Proje> Projeler { get; set; }
+        public DbSet<ProjeYetkili> ProjeYetkilileri { get; set; }
+        public DbSet<ProjeTuru> ProjeTurleri { get; set; }
+        public DbSet<ProjeDefaultLogo> ProjeDefaultLogolari { get; set; }
+        public DbSet<ProjeKatilimBolgesi> ProjeKatilimBolgeleri { get; set; }
+
+        //Proje ROL
+
+        public DbSet<RolAgirlikTipi> RolAgirlikTipleri { get; set; }
+        public DbSet<ProjeRol> ProjeRolleri { get; set; }
+        public DbSet<ProjeRolAnketSorusu> ProjeRolAnketSorulari { get; set; }
+        public DbSet<ProjeRolPerformer> ProjeRolPerformer { get; set; }
+        public DbSet<ProjeRolOzellik> ProjeRolOzellikleri { get; set; }
+        public DbSet<RolOzellikFiziksel> RolOzellikFizikseller { get; set; }
+        public DbSet<RolOzellikDeneyim> RolOzellikDeneyimler { get; set; }
+        public DbSet<RolOzellikEgitim> RolOzellikEgitimler { get; set; }
+        public DbSet<RolOzellikYetenek> RolOzellikYetenekler { get; set; }
+        public DbSet<RolOzellikPerformerEtiket> RolOzellikPerformerEtiketler { get; set; }
+
+        //PROJE ROL ODİ
+
+        public DbSet<ProjeRolOdi> ProjeRolOdileri { get; set; }
+
+        //ROL ODİ FOTOMATiK
+
+        public DbSet<RolOdiFotoPoz> RolOdiFotoPozlar { get; set; }
+        public DbSet<RolOdiFotoOrnekFotograf> RolOdiFotoOrnekFotograflar { get; set; }
+        public DbSet<RolOdiFotoYonetmenNotu> RolOdiFotoYonetmenNotlari { get; set; }
+
+        //ROL ODİ SESMATİK
+
+        public DbSet<RolOdiSes> RolOdiSesler { get; set; }
+        public DbSet<RolOdiSesYonetmenNotu> RolOdiSesYonetmenNotlari { get; set; }
+        public DbSet<RolOdiSesSenaryo> RolOdiSesSenaryolar { get; set; }
+
+        //ROl Odi Videomatik
+        public DbSet<RolOdiVideo> RolOdiVideolar { get; set; }
+        public DbSet<RolOdiVideoDetay> RolOdiVideoDetaylar { get; set; }
+        public DbSet<RolOdiVideoOrnekOyun> RolOdiVideoOrnekOyunlar { get; set; }
+        public DbSet<RolOdiVideoSenaryo> RolOdiVideoSenaryolar { get; set; }
+        public DbSet<RolOdiVideoYonetmenNotu> RolOdiVideoYonetmenNotlari { get; set; }
+
+        //Rol Odi Sorumatik
+        public DbSet<RolOdiSoru> RolOdiSorular { get; set; }
+        public DbSet<RolOdiSoruCevapSecenek> RolOdiSoruCevapSecenekleri { get; set; }
+        public DbSet<RolOdiSoruAciklama> RolOdiSoruAciklamalar { get; set; }
+
+        //Kayıtlı Rol Modelleri
+        public DbSet<KayitliRolOdiFotoOrnekFotograf> KayitliRolOdiFotoOrnekFotograflar { get; set; }
+        public DbSet<KayitliRolOdiFotoPoz> KayitliRolOdiFotoPozlar { get; set; }
+        public DbSet<KayitliRolOdiFotoYonetmenNotu> KayitliRolOdiFotoYonetmenNotlari { get; set; }
+        public DbSet<KayitliRolOdiSes> KayitliRolOdiSesler { get; set; }
+        public DbSet<KayitliRolOdiSesYonetmenNotu> KayitliRolOdiSesYonetmenNotlari { get; set; }
+        public DbSet<KayitliRolOdiSesSenaryo> KayitliRolOdiSesSenaryolari { get; set; }
+        public DbSet<KayitliRolOdiSoru> KayitliRolOdiSorular { get; set; }
+        public DbSet<KayitliRolOdiSoruAciklama> KayitliRolOdiSoruAciklamalar { get; set; }
+        public DbSet<KayitliRolOdiSoruCevapSecenek> KayitliRolOdiSoruCevapSecenekler { get; set; }
+        public DbSet<KayitliRolOdiVideo> KayitliRolOdiVideolar { get; set; }
+        public DbSet<KayitliRolOdiVideoDetay> KayitliRolOdiVideoDetaylar { get; set; }
+        public DbSet<KayitliRolOdiVideoOrnekOyun> KayitliRolOdiVideoOrnekOyunlar { get; set; }
+        public DbSet<KayitliRolOdiVideoSenaryo> KayitliRolOdiVideoSenaryolar { get; set; }
+        public DbSet<KayitliRolOdiVideoYonetmenNotu> KayitliRolOdiVideoYonetmenNotlar { get; set; }
+        public DbSet<KayitliRol> KayitliRoller { get; set; }
+        public DbSet<KayitliRolAnketSorusu> KayitliRolAnketSorulari { get; set; }
+        public DbSet<KayitliRolOzellik> KayitliRolOzellikler { get; set; }
+        public DbSet<KayitliRolOdi> KayitliRolOdiler { get; set; }
+
+        #endregion
+
+        #region Uygulama Bilgileri
+
+        public DbSet<Dil> Diller { get; set; }
+        public DbSet<TelefonKodu> TelefonKodlari { get; set; }
+        public DbSet<KayitTuru> KayitTurleri { get; set; }
+        public DbSet<KayitGrubu> KayitGruplari { get; set; }
+        public DbSet<Sehir> Sehirler { get; set; }
+        public DbSet<Ilce> Ilceler { get; set; }
+        public DbSet<SosyalMedya> SosyalMedyalar { get; set; }
+        public DbSet<Banka> Bankalar { get; set; }
+        public DbSet<SabitMetin> SabitMetinler { get; set; }
+        public DbSet<SSS> SSSLer { get; set; }
+        public DbSet<Ulke> Ulkeler { get; set; }
 
         #endregion
 

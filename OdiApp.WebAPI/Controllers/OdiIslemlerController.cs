@@ -3,13 +3,13 @@ using OdiApp.BusinessLayer.Core.AuthAttribute;
 using OdiApp.BusinessLayer.Core.Services.Interface;
 using OdiApp.BusinessLayer.Services.IslemlerLogicServices.OdiIslemler;
 using OdiApp.BusinessLayer.Services.IslemlerLogicServices.ProjePerformer;
-using OdiApp.DTOs.IslemlerDTOs;
 using OdiApp.DTOs.IslemlerDTOs.OdiIslemler.OdiIzlemeListesiDTO;
 using OdiApp.DTOs.IslemlerDTOs.OdiIslemler.OdiTalepDTOs;
 using OdiApp.DTOs.IslemlerDTOs.OdiIslemler.PerformerOdiDTO;
 using OdiApp.DTOs.IslemlerDTOs.ProjePerformer;
 using OdiApp.DTOs.Kullanici;
 using OdiApp.DTOs.SharedDTOs.OrtakDTOs;
+using OdiApp.DTOs.SharedDTOs.ProjeDTOs.ProjeBilgileriDTOs;
 
 namespace OdiApp.WebAPI.Controllers
 {

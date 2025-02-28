@@ -2,8 +2,10 @@
 using OdiApp.BusinessLayer.Core.Services.Interface;
 using OdiApp.BusinessLayer.Services.PerformerLogicServices.KullaniciBasicLogicServices;
 using OdiApp.BusinessLayer.Services.PerformerLogicServices.PerformerCVLogicServices;
+using OdiApp.BusinessLayer.Services.ShareWithOtherServicess;
 using OdiApp.DTOs.SharedDTOs;
 using OdiApp.DTOs.SharedDTOs.OrtakDTOs;
+using OdiApp.DTOs.SharedDTOs.ProjeDTOs.ProjeBilgileriDTOs;
 
 namespace OdiApp.WebAPI.Controllers;
 
@@ -11,17 +13,19 @@ namespace OdiApp.WebAPI.Controllers;
 [ApiController]
 public class ShareWithOtherServicesController : ControllerBase
 {
+    private readonly IShareWithOtherServices _shareWithOtherServices;
     private readonly IKullaniciBasicLogicService _kullaniciBasicLogicService;
     private readonly ISharedIdentityService _identityService;
     private readonly IPerformerCVLogicService _performerCVService;
     private readonly IGecerliDilService _dilService;
 
-    public ShareWithOtherServicesController(IKullaniciBasicLogicService kullaniciBasicLogicService, ISharedIdentityService identityService, IPerformerCVLogicService performerCVService, IGecerliDilService dilService)
+    public ShareWithOtherServicesController(IKullaniciBasicLogicService kullaniciBasicLogicService, ISharedIdentityService identityService, IPerformerCVLogicService performerCVService, IGecerliDilService dilService, IShareWithOtherServices shareWithOtherServices)
     {
         _kullaniciBasicLogicService = kullaniciBasicLogicService;
         _identityService = identityService;
         _performerCVService = performerCVService;
         _dilService = dilService;
+        _shareWithOtherServices = shareWithOtherServices;
     }
 
     [HttpPost("kullanici-ekle")]
@@ -52,6 +56,12 @@ public class ShareWithOtherServicesController : ControllerBase
     public async Task<IActionResult> KullaniciTelefonNumarasiGuncelle(KullaniciTelefonNumarasiDTO model)
     {
         return Ok(await _kullaniciBasicLogicService.TelefonNumarasiGuncelle(model, _identityService.GetUser));
+    }
+
+    [HttpPost("proje-yetkili-listesi")]
+    public async Task<IActionResult> ProjeDetayGetir(ProjeIdDTO projeId)
+    {
+        return Ok(await _shareWithOtherServices.ProjeYetkilileriGetir(projeId));
     }
 
     #region Rol Özellik Ayarları

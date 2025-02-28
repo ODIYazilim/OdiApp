@@ -3,7 +3,6 @@ using Microsoft.Extensions.Configuration;
 using Newtonsoft.Json;
 using OdiApp.BusinessLayer.Core.Services.Interface;
 using OdiApp.DataAccessLayer.IslemlerDataServices.OdiIslemler;
-using OdiApp.DTOs.IslemlerDTOs;
 using OdiApp.DTOs.IslemlerDTOs.OdiIslemler.OdiIzlemeListesiDTO;
 using OdiApp.DTOs.IslemlerDTOs.OdiIslemler.OdiTalepDTOs;
 using OdiApp.DTOs.IslemlerDTOs.OdiIslemler.PerformerOdiDTO;
@@ -11,6 +10,7 @@ using OdiApp.DTOs.IslemlerDTOs.OpsiyonIslemler;
 using OdiApp.DTOs.Kullanici;
 using OdiApp.DTOs.SharedDTOs;
 using OdiApp.DTOs.SharedDTOs.OrtakDTOs;
+using OdiApp.DTOs.SharedDTOs.ProjeDTOs.ProjeBilgileriDTOs;
 using OdiApp.EntityLayer.IslemlerModels.OdiIslemler;
 
 namespace OdiApp.BusinessLayer.Services.IslemlerLogicServices.OdiIslemler

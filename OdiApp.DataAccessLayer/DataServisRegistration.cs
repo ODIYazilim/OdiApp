@@ -49,7 +49,20 @@ using OdiApp.DataAccessLayer.PerformerDataServices.VideoTagDataServices;
 using OdiApp.DataAccessLayer.PerformerDataServices.VideoTipiDataServices;
 using OdiApp.DataAccessLayer.PerformerDataServices.YetenekData;
 using OdiApp.DataAccessLayer.PerformerDataServices.YetenekTemsilcisiDataServices;
+using OdiApp.DataAccessLayer.ProjelerDataServices.KayitliRoller;
+using OdiApp.DataAccessLayer.ProjelerDataServices.ProjeBilgileri;
+using OdiApp.DataAccessLayer.ProjelerDataServices.ProjeRolBilgileri;
+using OdiApp.DataAccessLayer.ProjelerDataServices.ProjeRolOdiBilgileri;
 using OdiApp.DataAccessLayer.Token;
+using OdiApp.DataAccessLayer.UygulamaBilgileriDataServices.BankaDataServices;
+using OdiApp.DataAccessLayer.UygulamaBilgileriDataServices.DilDataServices;
+using OdiApp.DataAccessLayer.UygulamaBilgileriDataServices.KayitTuruDataServices;
+using OdiApp.DataAccessLayer.UygulamaBilgileriDataServices.SabitMetinDataServices;
+using OdiApp.DataAccessLayer.UygulamaBilgileriDataServices.SehirDataServices;
+using OdiApp.DataAccessLayer.UygulamaBilgileriDataServices.SosyalMedyaDataServices;
+using OdiApp.DataAccessLayer.UygulamaBilgileriDataServices.SSSDataServices;
+using OdiApp.DataAccessLayer.UygulamaBilgileriDataServices.TelefonKoduDataServices;
+using OdiApp.DataAccessLayer.UygulamaBilgileriDataServices.UlkeServices;
 
 namespace OdiApp.DataAccessLayer
 {
@@ -178,6 +191,31 @@ namespace OdiApp.DataAccessLayer
             services.AddScoped<IAbonelikPaketiAboneOlmaDataService, AbonelikPaketiAboneOlmaDataService>();
             services.AddScoped<IAbonelikYukseltmeTalepDataService, AbonelikYukseltmeTalepDataService>();
             services.AddScoped<IKullaniciBasicDataService, KullaniciBasicDataService>();
+
+            #endregion
+
+            #region Projeler
+
+            services.AddScoped<IProjeDataService, ProjeDataService>();
+            services.AddScoped<IProjeRolDataService, ProjeRolDataService>();
+            services.AddScoped<IProjeRolOdiDataService, ProjeRolOdiDataService>();
+            services.AddScoped<IKullaniciBasicDataService, KullaniciBasicDataService>();
+            services.AddScoped<IKayitliRolDataService, KayitliRolDataService>();
+
+            #endregion
+
+            #region UygulamaBilgileri
+
+            services.AddScoped<ISehirService, SehirService>();
+            services.AddScoped<IDilService, DilService>();
+            services.AddScoped<IKayitTuruService, KayitTuruService>();
+            services.AddScoped<ITelefonKoduService, TelefonKoduService>();
+            services.AddScoped<ISehirService, SehirService>();
+            services.AddScoped<ISosyalMedyaService, SosyalMedyaService>();
+            services.AddScoped<IBankaService, BankaService>();
+            services.AddScoped<ISabitMetinService, SabitMetinService>();
+            services.AddScoped<ISSSService, SSSService>();
+            services.AddScoped<IUlkeService, UlkeService>();
 
             #endregion
         }

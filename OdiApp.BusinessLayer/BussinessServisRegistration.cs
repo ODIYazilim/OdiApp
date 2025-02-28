@@ -45,6 +45,11 @@ using OdiApp.BusinessLayer.Services.PerformerLogicServices.PerformerYorumLogicSe
 using OdiApp.BusinessLayer.Services.PerformerLogicServices.SetCard;
 using OdiApp.BusinessLayer.Services.PerformerLogicServices.YetenekLogic;
 using OdiApp.BusinessLayer.Services.PerformerLogicServices.YetenekTemsilcisiLogicServices;
+using OdiApp.BusinessLayer.Services.ProjelerLogicServices.KayitliRolLogicServices;
+using OdiApp.BusinessLayer.Services.ProjelerLogicServices.ProjeBilgileri;
+using OdiApp.BusinessLayer.Services.ProjelerLogicServices.ProjeRolBilgileri;
+using OdiApp.BusinessLayer.Services.ProjelerLogicServices.ProjeRolOdiBilgileri;
+using OdiApp.BusinessLayer.Services.ShareWithOtherServicess;
 using OdiApp.BusinessLayer.Services.Token;
 
 namespace OdiApp.BusinessLayer
@@ -123,6 +128,17 @@ namespace OdiApp.BusinessLayer
             services.AddScoped<IOpsiyonLogicService, OpsiyonLogicService>();
             services.AddScoped<IKullaniciBasicLogicService, KullaniciBasicLogicService>();
             services.AddScoped<IRolSendeLogicService, RolSendeLogicService>();
+
+            #endregion
+
+            #region Projeler
+
+            services.AddScoped<IProjeLogicService, ProjeLogicService>();
+            services.AddScoped<IProjeRolLogicService, ProjeRolLogicService>();
+            services.AddScoped<IProjeRolOdiLogicService, ProjeRolOdiLogicService>();
+            services.AddScoped<IShareWithOtherServices, ShareWithOtherServices>();
+            services.AddScoped<IKullaniciBasicLogicService, KullaniciBasicLogicService>();
+            services.AddScoped<IKayitliRolLogicService, KayitliRolLogicService>();
 
             #endregion
 
